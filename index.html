@@ -6,9 +6,12 @@
 
 <script>
   let month = (new Date('3/3/2021')).toLocaleString("en-GB", { month:"short" });
-  if (month=='Mar')
+  if (month == 'Mar')
     document.write(`<h2>returns correct notation: Mar</h2>`);
   else 
     document.write(`<h2 style="color:red" >returns: ${month} <br> should return: Mar</h2>`);
+  
+  document.write(`<h3>userAgent</h3>${navigator.userAgent}`);
+  document.write(`<h3>languages</h3>${navigator.languages.join(", ")}`);
 </script>
 
