@@ -4,12 +4,11 @@
 (new Date('3/3/2021')).toLocaleString("en-GB", { month:"short" })
 </code>
 
-<h2>Returns:</h2>
-
-<b>
 <script>
-document.write((new Date('3/3/2021')).toLocaleString("en-GB", { month:"short" }));
+  let month = (new Date('3/3/2021')).toLocaleString("en-GB", { month:"short" });
+  if (month=='Mar')
+    document.write(`<h2>returns correct notation</h2>`);
+  else 
+    document.write(`<h2 style="color:red" >returns ${month} , should return: Mar</h2>`);
 </script>
-</b>
 
-<h2>Should return: Mar</h2>
